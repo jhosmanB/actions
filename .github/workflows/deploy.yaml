@@ -1,10 +1,11 @@
 name: "test  Accion Deploy"
+
 on:
   push:
     branches: ["main"]
   
 jobs:
-  deploy-accion:
+  deploy-test:
     runs-on: ubuntu-lastest
     steps:
       - run: echo "Hacemos pull del codigo"
