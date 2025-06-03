@@ -1,14 +1,10 @@
-name: "test  Accion Deploy"
+name: deploy to server
 
-on:
-  push:
-    branches: ["main"]
+on: push
   
 jobs:
-  deploy-test:
+  first_jobs:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hacemos pull del codigo"
-      - run: echo "Correr migraciones"
-      - run: echo "Generar binario"
-      - run: echo "publicar version"
+      - name: Hola Mundo
+        run : echo "Hola Mundo"
