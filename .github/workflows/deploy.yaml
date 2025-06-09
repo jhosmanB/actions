@@ -9,7 +9,7 @@ jobs:
       NAME: var
     steps:
       - name: Hola Mundo
-        run : echo "Hola Mundo $var"
+        run : echo "Hola Mundo $NAME"
   second_jobs:
     needs: first_jobs
     runs-on: ubuntu-latest
