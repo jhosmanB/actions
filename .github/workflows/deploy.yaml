@@ -18,4 +18,14 @@ jobs:
         with:
           name: archivo-test
           path: test.log
-        
+    
+  second_jobs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar archivo
+        uses: actions/ download-artifact@v4
+        with:
+          name: archivo-test
+      - name: cat file
+        run: cat test.log
