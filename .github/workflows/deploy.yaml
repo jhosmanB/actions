@@ -15,7 +15,7 @@ jobs:
           echo "Archivo de prueba , hola" >> test.log
       - name: subir artefacto
         uses: actions/upload-artifact@v4
-        whit:
+        with:
           name: archivo-test
           path: test.log
         
