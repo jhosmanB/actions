@@ -12,10 +12,11 @@ jobs:
         run : ls -al
 
       - name: Action
-        uses: actions/checkuot@v4
+        uses: actions/checkout@v4
 
       - name: despues del action
         run : ls -al
+        
   second_jobs:
     needs: first_jobs
     runs-on: ubuntu-latest
